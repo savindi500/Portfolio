@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "https://savindi500.github.io/Portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": " https://savindi500.github.io/Portfolio/"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
