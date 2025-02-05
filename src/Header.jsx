@@ -1,5 +1,6 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, Button, IconButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   const handleScroll = (sectionId) => {
@@ -10,22 +11,41 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+    <AppBar position="sticky" sx={{ bgcolor: 'primary.dark', boxShadow: 3 }}>
+      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        {/* Logo or Name */}
+        <Typography 
+          variant="h5" 
+          component="div" 
+          sx={{ fontWeight: 'bold', letterSpacing: 1 }}
+        >
           Savindi Disanayake
         </Typography>
-        <Box>
+        
+        {/* Navigation Buttons */}
+        <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           {['Home', 'About', 'Skills', 'Education', 'Projects', 'Contact'].map((item) => (
             <Button
               key={item}
               onClick={() => handleScroll(item.toLowerCase())}
-              sx={{ color: 'white', ml: 1 }}
+              sx={{
+                color: 'white',
+                mx: 1.5,
+                fontWeight: 'bold',
+                textTransform: 'none',
+                transition: '0.3s',
+                '&:hover': { color: 'secondary.light' }
+              }}
             >
-              {item[0].toUpperCase() + item.slice(1).toLowerCase()}
+              {item}
             </Button>
           ))}
         </Box>
+        
+        {/* Mobile Menu Button */}
+        <IconButton sx={{ display: { sm: 'none' }, color: 'white' }}>
+          <MenuIcon />
+        </IconButton>
       </Toolbar>
     </AppBar>
   );
