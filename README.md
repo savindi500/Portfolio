@@ -11,29 +11,14 @@ This is my personal portfolio website built using React.js. It showcases my skil
 - ✅ Contact Form
 
 ## Tech Stack
-- **Frontend:** React.js, Material-UI, Tailwind CSS
-- **State Management:** Redux (if used)
-- **Other Tools:** Framer Motion (if used for animations), Firebase (if integrated)
+- **Frontend:** React.js, Material-UI
+- **Other Tools:** Framer Motion 
 
 ## Installation & Setup
 To run the project locally, follow these steps:
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-portfolio.git
-
-# Navigate to the project directory
-cd your-portfolio
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-```
 
 ## Deployment
-The portfolio is live at: [your-portfolio-link.com](https://your-portfolio-link.com)
+The portfolio is live at: [https://savindi500.github.io/Portfolio/](https://savindi500.github.io/Portfolio/)
 
-## Screenshots
-(Add screenshots or GIFs showcasing your portfolio here)
+
