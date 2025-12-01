@@ -33,7 +33,8 @@ const projects = [
       "A modern UI/UX learning platform I developed focusing on clean layouts, skill sharing and responsive design.",
     image:
       "https://images.unsplash.com/photo-1604145187954-0c3e4e3d0c1a?auto=format&fit=crop&w=800&q=60",
-    demoLink: "https://github.com/Sanka11/DesignHive.git",
+    demoLink:
+      "https://www.linkedin.com/posts/savindi-disanayake-552048315_uiux-designcommunity-skillsharing-activity-7347632914144092160-64oE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_rDQ4BZatLr_Kgdt0hNdILPCZqRrEBmBo",
   },
 
   {
@@ -91,7 +92,7 @@ const projects = [
     title: "VibeCare App (Designathon)",
     description:
       "Healthcare mobile UI/UX prototype designed for a competition.",
-    image: vibecare ,
+    image: vibecare,
     demoLink:
       "https://www.figma.com/design/u1j6trvTsFHxu1lHu35KYn/Zara-Website-Re-Designing?node-id=0-1",
   },
