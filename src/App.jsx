@@ -1,34 +1,46 @@
-import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import Header from './Header';
-import Home from './components/Home';
-import Footer from './Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+import Navbar from "./components/Navbar.jsx";
+import Header from "./components/Header";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Qualification from "./components/Qualification";
+import Contact from "./components/Contact";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: '#3f51b5',
-    },
     background: {
-      default: '#ffff',
+      default: "#F8FAFF",
+      paper: "#FFFFFF",
     },
+    primary: {
+      main: "#4C1D95",
+    },
+    secondary: {
+      main: "#0EA5E9",
+    },
+  },
+  typography: {
+    fontFamily: "Poppins, Roboto, Arial",
   },
 });
 
-const App = () => {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Navbar />
       <Header />
-      <main>
-        <Home />
-      </main>
-      <Footer />
+      <About />
+      <Skills />
+      <Projects />
+      <Qualification />
+      <Contact />
     </ThemeProvider>
   );
-};
+}
 
 export default App;
