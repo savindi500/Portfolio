@@ -78,8 +78,8 @@ const About = () => {
         <motion.div whileHover={{ scale: 1.04 }}>
           <Button
             variant="contained"
-            href="/cv/Savindi_Disanayake_CV.pdf"
-            download
+            href="public/cv/Savindi_Disanayaka_CV.pdf"
+            download="Savindi_Disanayaka_CV.pdf"
             sx={{
               background: "linear-gradient(90deg, #7e22ce, #4C1D95)",
               px: 4,
