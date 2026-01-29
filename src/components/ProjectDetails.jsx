@@ -135,7 +135,7 @@ Once scanned, customers can browse the menu, place orders, and track their order
     ],
   },
 
-  // Existing projects
+  
   {
     id: 1,
     title: "SmartSched Web - Academic Scheduler 🎓📅",

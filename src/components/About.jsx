@@ -12,7 +12,7 @@ const About = () => {
     // Append to the document
     document.body.appendChild(link);
 
-    // Trigger download
+   
     link.click();
 
     // Clean up

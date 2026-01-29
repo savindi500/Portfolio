@@ -124,7 +124,7 @@ const Skills = () => {
               src={skill.icon}
               alt={skill.name}
               style={{
-                width: 45, // smaller icon size
+                width: 45, 
                 height: 45,
                 marginBottom: 10,
                 filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.15))",
