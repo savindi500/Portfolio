@@ -230,7 +230,7 @@ const Navbar = () => {
         </AppBar>
       </Box>
 
-      {/* Drawer - Only for home page navigation */}
+      
       {!isProjectDetailsPage && (
         <Drawer
           anchor="right"
