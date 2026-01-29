@@ -3,6 +3,22 @@ import { Box, Typography, Button } from "@mui/material";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const handleDownloadCV = () => {
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = "Portfolio/cv/Savindi_Disanayaka_CV.pdf";
+    link.download = "Savindi_Disanayaka_CV.pdf";
+
+    // Append to the document
+    document.body.appendChild(link);
+
+    // Trigger download
+    link.click();
+
+    // Clean up
+    document.body.removeChild(link);
+  };
+
   return (
     <Box
       id="about"
@@ -75,11 +91,10 @@ const About = () => {
         </motion.div>
 
         {/* BUTTON */}
-        <motion.div whileHover={{ scale: 1.04 }}>
+        <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.95 }}>
           <Button
             variant="contained"
-            href="public/cv/Savindi_Disanayaka_CV.pdf"
-            download="Savindi_Disanayaka_CV.pdf"
+            onClick={handleDownloadCV}
             sx={{
               background: "linear-gradient(90deg, #7e22ce, #4C1D95)",
               px: 4,
@@ -87,10 +102,17 @@ const About = () => {
               borderRadius: 2,
               textTransform: "none",
               fontWeight: 700,
-              "&:hover": { background: "#6d28d9" },
+              fontSize: "1rem",
+              boxShadow: "0 6px 20px rgba(124, 58, 237, 0.3)",
+              "&:hover": {
+                background: "linear-gradient(90deg, #6d28d9, #3A0F7A)",
+                boxShadow: "0 8px 25px rgba(124, 58, 237, 0.4)",
+                transform: "translateY(-2px)",
+              },
+              transition: "all 0.3s ease",
             }}
           >
-            Download CV
+            📄 Download CV
           </Button>
         </motion.div>
       </Box>

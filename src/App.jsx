@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -9,6 +10,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Qualification from "./components/Qualification";
 import Contact from "./components/Contact";
+import ProjectDetails from "./components/ProjectDetails";
 
 const theme = createTheme({
   palette: {
@@ -28,17 +30,30 @@ const theme = createTheme({
   },
 });
 
+// Main layout component that includes all sections
+const HomePage = () => (
+  <>
+    <Header />
+    <About />
+    <Skills />
+    <Projects />
+    <Qualification />
+    <Contact />
+  </>
+);
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Qualification />
-      <Contact />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
+          {/* You can add more routes here if needed */}
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }
