@@ -30,7 +30,6 @@ const theme = createTheme({
   },
 });
 
-// Main layout component that includes all sections
 const HomePage = () => (
   <>
     <Header />
@@ -46,12 +45,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      {/* 👇 THIS FIXES GITHUB PAGES ROUTING */}
+      <Router basename="/Portfolio">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
-          {/* You can add more routes here if needed */}
         </Routes>
       </Router>
     </ThemeProvider>
