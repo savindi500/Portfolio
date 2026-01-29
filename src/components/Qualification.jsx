@@ -16,7 +16,7 @@ const Qualification = () => {
     },
   ];
 
-  // Experience
+ 
   const experience = [
     {
       title: "Software Engineering Intern",
@@ -26,7 +26,7 @@ const Qualification = () => {
     },
   ];
 
-  // Certifications
+  
   const certifications = [
     {
       title: "2nd Runner-Up – CODEFEST Designathon",

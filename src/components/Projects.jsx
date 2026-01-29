@@ -1,4 +1,4 @@
-// Update your Projects.jsx component
+
 import React from "react";
 import {
   Box,
@@ -17,7 +17,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Import your local images
+
 import timetable from "../assets/timetable.jpg";
 import ecom from "../assets/ecom.png";
 import skill from "../assets/skill.png";
