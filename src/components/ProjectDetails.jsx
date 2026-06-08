@@ -135,7 +135,6 @@ Once scanned, customers can browse the menu, place orders, and track their order
     ],
   },
 
-  
   {
     id: 1,
     title: "SmartSched Web - Academic Scheduler 🎓📅",
@@ -171,7 +170,7 @@ Once scanned, customers can browse the menu, place orders, and track their order
       "Community forums",
       "Mentorship matching",
     ],
-    githubLink: "https://github.com/savindi500/designhive",
+    githubLink: "https://github.com/Sanka11/DesignHive",
     liveDemo: "https://designhive-demo.com",
     category: "Frontend",
     date: "2025-01",
