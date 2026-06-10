@@ -3,7 +3,7 @@ import { Box, Typography, Stack, IconButton } from "@mui/material";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Image from "../assets/savindi.png";
+import Image from "../assets/savindi.jpg";
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
